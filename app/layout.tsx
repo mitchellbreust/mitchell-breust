@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     shortcut: '/download.png',
     apple: '/download.png',
   },
+  verification: {
+    google: 'TV83qYE9oDE9JLnKYinph0Ww1b6IQ-R6bWQhmd2orOY',
+  },
   other: {
     'preload-image': '/converted_image (1).jpeg',
   }
