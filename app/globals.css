@@ -10,6 +10,18 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .text-spaced {
+    @apply tracking-[0.025em] leading-relaxed;
+  }
+  
+  .text-spaced-lg {
+    @apply tracking-[0.05em] leading-loose;
+  }
+  
+  .text-spaced-sm {
+    @apply tracking-[0.01em] leading-normal;
+  }
 }
 
 @layer base {
@@ -98,6 +110,20 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Add improved paragraph spacing */
+  p {
+    @apply text-spaced;
+  }
+  
+  /* Adjust specific text sizes */
+  .text-sm p {
+    @apply text-spaced-sm;
+  }
+  
+  .text-xl p, .text-lg p {
+    @apply text-spaced-lg;
   }
 }
 
