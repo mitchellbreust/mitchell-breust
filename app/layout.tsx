@@ -1,15 +1,24 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({ subsets: ["latin"] })
+const jakarta = Plus_Jakarta_Sans({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  variable: '--font-jakarta',
+  weight: ['400', '500', '600', '700'],
+})
 
 export const metadata: Metadata = {
   title: "Developer Portfolio",
   description: "Freelance Web Developer Portfolio",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  other: {
+    'preload-image': '/converted_image (1).jpeg',
+  }
 }
 
 export default function RootLayout({
@@ -19,7 +28,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <head>
+        <link
+          rel="preload"
+          href="/converted_image (1).jpeg"
+          as="image"
+          type="image/jpeg"
+        />
+      </head>
+      <body className={`${jakarta.variable} font-sans antialiased tracking-tight`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

@@ -10,7 +10,7 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-40",
+        "fixed top-0 left-0 right-0 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50",
         "transition-transform duration-300",
         visible ? "translate-y-0" : "-translate-y-full",
       )}

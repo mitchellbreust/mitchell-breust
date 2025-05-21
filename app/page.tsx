@@ -8,7 +8,7 @@ import { PricingSection } from "@/components/pricing-section"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex flex-col">
       <SiteHeader />
       <main className="flex-1">
         <div className="bg-background">
