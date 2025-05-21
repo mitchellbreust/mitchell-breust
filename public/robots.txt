@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mitchellbreust.com
+
+# Sitemaps
+Sitemap: https://mitchellbreust.com/sitemap.xml
