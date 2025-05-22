@@ -25,12 +25,81 @@ export function ProjectsSection() {
             </CardHeader>
             <CardContent className="flex-grow">
               <p className="text-sm text-muted-foreground">
-              I’ve designed and developed custom static and catalog websites for small businesses including: retailers, service providers, and more. 
-              These sites feature fast-loading pages, mobile-friendly layouts, 
-              integrated content management systems (CMS), and product catalogs with search and pricing — all tailored to each client’s brand and business goals.
+              I've built fast, mobile-friendly websites for small businesses, complete with CMS, product catalogs, and custom design to match each brand.
               </p>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex flex-col gap-4">
+              <div className="grid grid-cols-2 gap-4 w-full">
+                <Link 
+                  href="https://cairns-move-go.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <Image
+                    src="/cairns-move-go.vercel.app_ (1).png"
+                    alt="Cairns Ute & Move - Removalist Services Website"
+                    fill
+                    className="object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    <p className="text-sm font-medium">Cairns Ute & Move</p>
+                    <p className="text-xs text-white/80">Removalist Services</p>
+                  </div>
+                </Link>
+                <Link 
+                  href="https://example2.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <Image
+                    src="/website-preview2.jpg"
+                    alt="Website Preview 2"
+                    fill
+                    className="object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    <p className="text-sm font-medium">Example Business 2</p>
+                  </div>
+                </Link>
+                <Link 
+                  href="https://example3.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <Image
+                    src="/website-preview3.jpg"
+                    alt="Website Preview 3"
+                    fill
+                    className="object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    <p className="text-sm font-medium">Example Business 3</p>
+                  </div>
+                </Link>
+                <Link 
+                  href="https://example4.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <Image
+                    src="/website-preview4.jpg"
+                    alt="Website Preview 4"
+                    fill
+                    className="object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    <p className="text-sm font-medium">Example Business 4</p>
+                  </div>
+                </Link>
+              </div>
             </CardFooter>
           </Card>
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
