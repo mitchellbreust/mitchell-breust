@@ -49,20 +49,21 @@ export function ProjectsSection() {
                   </div>
                 </Link>
                 <Link 
-                  href="https://example2.com" 
+                  href="https://infuse-watch.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                   <Image
-                    src="/website-preview2.jpg"
-                    alt="Website Preview 2"
+                    src="/infuse-watch.vercel.app_(Nest Hub Max).png"
+                    alt="InfuseWatch - Medical Device Safety Innovation"
                     fill
                     className="object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                    <p className="text-sm font-medium">Example Business 2</p>
+                    <p className="text-sm font-medium">InfuseWatch</p>
+                    <p className="text-xs text-white/80">Medical Device Safety Innovation</p>
                   </div>
                 </Link>
                 <Link 
