@@ -66,41 +66,26 @@ export function ProjectsSection() {
                     <p className="text-xs text-white/80">Medical Device Safety Innovation</p>
                   </div>
                 </Link>
-                <Link 
-                  href="https://example3.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <Image
-                    src="/website-preview3.jpg"
-                    alt="Website Preview 3"
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                    <p className="text-sm font-medium">Example Business 3</p>
-                  </div>
-                </Link>
-                <Link 
-                  href="https://example4.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <Image
-                    src="/website-preview4.jpg"
-                    alt="Website Preview 4"
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                    <p className="text-sm font-medium">Example Business 4</p>
-                  </div>
-                </Link>
               </div>
+            </CardFooter>
+          </Card>
+          <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+            <CardHeader className="flex-grow flex flex-col">
+              <div className="h-[80px]">
+                <CardTitle>OBDInsight</CardTitle>
+                <CardDescription className="line-clamp-2 mt-3">Advanced OBD-II data analytics platform with machine learning capabilities</CardDescription>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-sm text-muted-foreground">
+                A web platform for real-time OBD-II vehicle data analytics with machine learning-powered anomaly detection. Integrates with a custom-built OBD-II microcontroller 
+                that transmits data via mobile internet, enabling remote monitoring and diagnostic trouble code analysis.
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Button asChild>
+                <Link href="https://github.com/mitchellbreust/OBDInsight">View Project</Link>
+              </Button>
             </CardFooter>
           </Card>
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
@@ -119,26 +104,6 @@ export function ProjectsSection() {
             <CardFooter>
               <Button asChild>
                 <Link href="https://mock-wise.online">View Project</Link>
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
-            <CardHeader className="flex-grow flex flex-col">
-              <div className="h-[80px]">
-                <CardTitle>BareHTTP</CardTitle>
-                <CardDescription className="line-clamp-2 mt-3">A tiny C-compatible HTTP client for bare-metal IOT systems.</CardDescription>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-sm text-muted-foreground">
-                Barehttp is a tiny, C-compatible HTTP/1.1 client for Zig, made to run on bare-metal systems with no OS and as little as 16 KB of 
-                RAM. With no TLS, allocators, or threads, it's built for microcontrollers and IoT devices that need simple, blocking HTTP with 
-                zero dependencies.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button asChild>
-                <Link href="https://github.com/mitchellbreust/bareHTTP">View Project</Link>
               </Button>
             </CardFooter>
           </Card>

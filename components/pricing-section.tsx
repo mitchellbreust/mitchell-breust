@@ -66,7 +66,7 @@ export function PricingSection() {
               <CardTitle>Basic Website + Product Catalog Website</CardTitle>
               <CardDescription>For businesses that need online sales</CardDescription>
               <div className="mt-4">
-                <span className="text-4xl font-bold">$300</span>
+                <span className="text-4xl font-bold">$250</span>
                 <span className="text-muted-foreground"> /one-time</span>
                 <p className="text-sm text-muted-foreground mt-2">Example of what this service can include</p>
               </div>
