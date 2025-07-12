@@ -15,14 +15,17 @@ export function ProjectsSection() {
             </p>
           </div>
         </div>
+
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
 
-          </Card>
+          {/* OBDInsight */}
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <CardHeader className="flex-grow flex flex-col">
               <div className="h-[80px]">
                 <CardTitle>OBDInsight</CardTitle>
-                <CardDescription className="line-clamp-2 mt-3">Advanced OBD-II data analytics platform with machine learning capabilities</CardDescription>
+                <CardDescription className="line-clamp-2 mt-3">
+                  Advanced OBD-II data analytics platform with machine learning capabilities
+                </CardDescription>
               </div>
             </CardHeader>
             <CardContent className="flex-grow">
@@ -36,43 +39,46 @@ export function ProjectsSection() {
                 <Link href="https://github.com/mitchellbreust/OBDInsight">View Project</Link>
               </Button>
             </CardFooter>
+          </Card>
 
-            <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
-              <CardHeader className="flex-grow flex flex-col">
-                <div className="h-[80px]">
-                  <CardTitle>Cairns Ute & Move</CardTitle>
-                  <CardDescription className="line-clamp-2 mt-3">
-                    Service site for a local removalist team based in Cairns.
-                  </CardDescription>
+          {/* Cairns Ute & Move */}
+          <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+            <CardHeader className="flex-grow flex flex-col">
+              <div className="h-[80px]">
+                <CardTitle>Cairns Ute & Move</CardTitle>
+                <CardDescription className="line-clamp-2 mt-3">
+                  Service site for a local removalist team based in Cairns.
+                </CardDescription>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-sm text-muted-foreground">
+                Built with Next.js, this mobile-friendly site promotes a Cairns-based moving and delivery service. It features a clear service breakdown, transparent pricing, and contact options — focused on trust, efficiency, and local connection.
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Link 
+                href="https://cairns-move-go.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <Image
+                  src="/cairns-move-go.vercel.app_ (1).png"
+                  alt="Cairns Ute & Move - Removalist Services Website"
+                  fill
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                  <p className="text-sm font-medium">Cairns Ute & Move</p>
+                  <p className="text-xs text-white/80">Removalist Services</p>
                 </div>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-sm text-muted-foreground">
-                  Built with Next.js, this mobile-friendly site promotes a Cairns-based moving and delivery service. It features a clear service breakdown, transparent pricing, and contact options — focused on trust, efficiency, and local connection.
-                </p>
-              </CardContent>
-              <CardFooter>
-                <Link 
-                  href="https://cairns-move-go.vercel.app/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <Image
-                    src="/cairns-move-go.vercel.app_ (1).png"
-                    alt="Cairns Ute & Move - Removalist Services Website"
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                    <p className="text-sm font-medium">Cairns Ute & Move</p>
-                    <p className="text-xs text-white/80">Removalist Services</p>
-                  </div>
-                </Link>
-              </CardFooter>
-            </Card>
+              </Link>
+            </CardFooter>
+          </Card>
 
+          {/* InfuseWatch */}
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <CardHeader className="flex-grow flex flex-col">
               <div className="h-[80px]">
@@ -89,27 +95,27 @@ export function ProjectsSection() {
               </p>
             </CardContent>
             <CardFooter>
-                <Link 
-                  href="https://infuse-watch.vercel.app/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <Image
-                    src="/infuse-watch.vercel.app_(Nest Hub Max).png"
-                    alt="InfuseWatch - Medical Device Safety Innovation"
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                    <p className="text-sm font-medium">InfuseWatch</p>
-                    <p className="text-xs text-white/80">Medical Device Safety Innovation</p>
-                  </div>
-                </Link>
+              <Link 
+                href="https://infuse-watch.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <Image
+                  src="/infuse-watch.vercel.app_(Nest Hub Max).png"
+                  alt="InfuseWatch - Medical Device Safety Innovation"
+                  fill
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                  <p className="text-sm font-medium">InfuseWatch</p>
+                  <p className="text-xs text-white/80">Medical Device Safety Innovation</p>
+                </div>
+              </Link>
             </CardFooter>
-        </Card>
-          
+          </Card>
+
         </div>
       </div>
     </section>
