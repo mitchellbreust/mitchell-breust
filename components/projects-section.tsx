@@ -18,39 +18,38 @@ export function ProjectsSection() {
 
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
 
-      {/* EchoMesh */}
-      <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
-        <CardHeader className="flex-grow flex flex-col">
-          <div className="h-[80px]">
-            <CardTitle>EchoMesh</CardTitle>
-            <CardDescription className="line-clamp-2 mt-3">
-              A decentralized Bluetooth mesh communication protocol built for resilience and reach.
-            </CardDescription>
-          </div>
-        </CardHeader>
-        <CardContent className="flex-grow">
-          <p className="text-sm text-muted-foreground">
-            EchoMesh enables peer-to-peer messaging across long distances using a mesh of Bluetooth-connected mobile devices. Messages hop between nearby phones—each acting as a node in a dynamic, decentralized network—to reach targets beyond the standard Bluetooth range. 
-            The system is being developed for Android and Linux using C++ and Java, with future plans for a dedicated Bluetooth relay box with extended 1km range and satellite uplink support to bridge distant networks securely.
-          </p>
-          <div className="mt-4">
-            <p className="text-xs text-muted-foreground italic">
-              🔧 Under active development. Relay hardware in prototyping phase.
-            </p>
-          </div>
-        </CardContent>
-        <CardFooter className="flex flex-col gap-3">
-          <Button asChild>
-            <Link href="https://github.com/mitchellbreust/EchoMesh" target="_blank">
-              View Project on GitHub
-            </Link>
-          </Button>
-          {/* Optional: Future demo video section */}
-          <div className="w-full aspect-video bg-muted rounded-md flex items-center justify-center text-muted-foreground text-sm border">
-            Video demo coming soon...
-          </div>
-        </CardFooter>
-      </Card>
+          {/* EchoMesh */}
+          <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+            <CardHeader className="flex-grow flex flex-col">
+              <div className="h-[80px]">
+                <CardTitle>EchoMesh</CardTitle>
+                <CardDescription className="line-clamp-2 mt-3">
+                  Decentralized Bluetooth mesh messaging across mobile devices.
+                </CardDescription>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-sm text-muted-foreground">
+                Built with C++ and Java, EchoMesh lets phones relay messages over Bluetooth—hopping device to device. Works offline, peer-to-peer, with plans for 1km-range relay hardware and satellite bridging.
+              </p>
+              <p className="text-xs text-muted-foreground italic mt-2">
+                🔧 Hardware relay box in planning.
+              </p>
+            </CardContent>
+            <CardFooter className="flex flex-col gap-2">
+              <Link
+                href="https://github.com/mitchellbreust/EchoMesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-medium text-blue-600 hover:underline"
+              >
+                View on GitHub →
+              </Link>
+              <div className="w-full aspect-video bg-muted rounded-md flex items-center justify-center text-muted-foreground text-sm border">
+                Video demo coming soon...
+              </div>
+            </CardFooter>
+          </Card>
 
           {/* Cairns Ute & Move */}
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
