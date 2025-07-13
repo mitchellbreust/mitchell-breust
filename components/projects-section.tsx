@@ -107,24 +107,27 @@ export function ProjectsSection() {
               </p>
             </CardContent>
             <CardFooter>
-              <Link 
-                href="https://infuse-watch.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
-              >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="relative w-full aspect-video overflow-hidden rounded-lg border bg-muted group transition-all hover:shadow-md">
                 <Image
                   src="/infuse-watch.png"
                   alt="InfuseWatch - Medical Device Safety Innovation"
                   fill
+                  priority
                   className="object-cover transition-transform group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                  <p className="text-sm font-medium">InfuseWatch</p>
-                  <p className="text-xs text-white/80">Medical Device Safety Innovation</p>
-                </div>
-              </Link>
+                <Link
+                  href="https://infuse-watch.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    <p className="text-sm font-medium">InfuseWatch</p>
+                    <p className="text-xs text-white/80">Medical Device Safety Innovation</p>
+                  </div>
+                </Link>
+              </div>
             </CardFooter>
           </Card>
 
