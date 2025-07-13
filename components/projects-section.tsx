@@ -65,7 +65,7 @@ export function ProjectsSection() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <Image
-                  src="/cairns-move-go.vercel.app_ (1).png"
+                  src="/cairns-move-go.png"
                   alt="Cairns Ute & Move - Removalist Services Website"
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
@@ -103,7 +103,7 @@ export function ProjectsSection() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <Image
-                  src="/infuse-watch.vercel.app_(Nest Hub Max).png"
+                  src="/infuse-watch.png"
                   alt="InfuseWatch - Medical Device Safety Innovation"
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
