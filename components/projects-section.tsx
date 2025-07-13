@@ -18,28 +18,39 @@ export function ProjectsSection() {
 
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
 
-          {/* OBDInsight */}
-          <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
-            <CardHeader className="flex-grow flex flex-col">
-              <div className="h-[80px]">
-                <CardTitle>OBDInsight</CardTitle>
-                <CardDescription className="line-clamp-2 mt-3">
-                  Advanced OBD-II data analytics platform with machine learning capabilities
-                </CardDescription>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-sm text-muted-foreground">
-                A web platform for real-time OBD-II vehicle data analytics with machine learning-powered anomaly detection. Integrates with a custom-built OBD-II microcontroller 
-                that transmits data via mobile internet, enabling remote monitoring and diagnostic trouble code analysis.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button asChild>
-                <Link href="https://github.com/mitchellbreust/OBDInsight">View Project</Link>
-              </Button>
-            </CardFooter>
-          </Card>
+      {/* EchoMesh */}
+      <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+        <CardHeader className="flex-grow flex flex-col">
+          <div className="h-[80px]">
+            <CardTitle>EchoMesh</CardTitle>
+            <CardDescription className="line-clamp-2 mt-3">
+              A decentralized Bluetooth mesh communication protocol built for resilience and reach.
+            </CardDescription>
+          </div>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-sm text-muted-foreground">
+            EchoMesh enables peer-to-peer messaging across long distances using a mesh of Bluetooth-connected mobile devices. Messages hop between nearby phones—each acting as a node in a dynamic, decentralized network—to reach targets beyond the standard Bluetooth range. 
+            The system is being developed for Android and Linux using C++ and Java, with future plans for a dedicated Bluetooth relay box with extended 1km range and satellite uplink support to bridge distant networks securely.
+          </p>
+          <div className="mt-4">
+            <p className="text-xs text-muted-foreground italic">
+              🔧 Under active development. Relay hardware in prototyping phase.
+            </p>
+          </div>
+        </CardContent>
+        <CardFooter className="flex flex-col gap-3">
+          <Button asChild>
+            <Link href="https://github.com/mitchellbreust/EchoMesh" target="_blank">
+              View Project on GitHub
+            </Link>
+          </Button>
+          {/* Optional: Future demo video section */}
+          <div className="w-full aspect-video bg-muted rounded-md flex items-center justify-center text-muted-foreground text-sm border">
+            Video demo coming soon...
+          </div>
+        </CardFooter>
+      </Card>
 
           {/* Cairns Ute & Move */}
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
