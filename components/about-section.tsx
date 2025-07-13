@@ -8,16 +8,14 @@ export function AboutSection() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Me</h2>
             <p className="text-muted-foreground md:text-xl">
-            I'm a developer focused on building clean, fast, and functional websites that solve real problems. 
-            From service-based booking platforms with CMS integration to portfolio sites and e-commerce-ready interfaces, 
-            I specialize in using tools like Next.js, React, and Tailwind CSS to create smooth user experiences with maintainable code 
-            behind the scenes.
-            </p>
-            <p className="text-muted-foreground md:text-xl">
-            Beyond the browser, I’m also passionate about low-level systems. I’ve built embedded-friendly tools like a Zig-based HTTP client 
-            for microcontrollers and experimented with AI-powered apps like MockWise to help people prepare for technical interviews. Whether 
-            it's frontend polish or bare-metal performance, I enjoy building tools that are lean, purposeful, and well-crafted.
-            </p>
+            I’m a full-stack developer focused on creating fast, clean, and reliable web applications. From service-based platforms and booking systems to portfolio sites and responsive interfaces, 
+              I build with performance and clarity in mind—using tools like Next.js, React, and Tailwind CSS.
+          </p>
+          <p className="text-muted-foreground md:text-xl">
+            Beyond the browser, I enjoy low-level development with Zig and C++, exploring embedded systems and performance-critical applications. 
+            I also have a passion for server-side development using Go, building scalable and efficient backends. Whether working on frontend experiences or backend infrastructure, I strive to craft lean, maintainable, 
+            and well-engineered solutions.
+          </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="flex flex-col items-center justify-center space-y-2 rounded-lg border bg-background p-4 shadow-sm">
