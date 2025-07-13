@@ -15,7 +15,6 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Developer Portfolio",
   description: "Freelance Web Developer Portfolio",
-  generator: 'v0.dev',
   icons: {
     icon: '/download.png',
     shortcut: '/download.png',
