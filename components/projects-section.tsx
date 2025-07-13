@@ -66,17 +66,27 @@ export function ProjectsSection() {
                 Built with Next.js, this mobile-friendly site promotes a Cairns-based moving and delivery service. It features a clear service breakdown, transparent pricing, and contact options — focused on trust, efficiency, and local connection.
               </p>
             </CardContent>
-            <CardFooter>
-                <div className="border w-full">
-                  <Image
-                    src="/cairns-move-go.png"
-                    alt="Cairns Ute & Move"
-                    width={640}
-                    height={360}
-                    priority
-                    className="object-cover rounded-md"
-                  />
+              <CardFooter>
+              <Link 
+                href="https://cairns-move-go.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative w-full overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
+              >
+                <Image
+                  src="/cairns-move-go.png"
+                  alt="Cairns Ute & Move"
+                  width={640}
+                  height={360}
+                  priority
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute bottom-0 left-0 right-0 p-2 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                  <p className="text-sm font-medium">Cairns Ute & Move</p>
+                  <p className="text-xs text-white/80">Removalist Services</p>
                 </div>
+              </Link>
           </CardFooter>
           </Card>
 
