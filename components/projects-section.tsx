@@ -18,38 +18,41 @@ export function ProjectsSection() {
 
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
 
-          {/* EchoMesh */}
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
-            <CardHeader className="flex-grow flex flex-col">
-              <div className="h-[80px]">
-                <CardTitle>EchoMesh</CardTitle>
-                <CardDescription className="line-clamp-2 mt-3">
-                  Decentralized Bluetooth mesh messaging across mobile devices.
-                </CardDescription>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-sm text-muted-foreground">
-                Built with C++ and Java, EchoMesh lets phones relay messages over Bluetooth—hopping device to device. Works offline, peer-to-peer, with plans for 1km-range relay hardware and satellite bridging.
-              </p>
-              <p className="text-xs text-muted-foreground italic mt-2">
-                🔧 Hardware relay box in planning.
-              </p>
-            </CardContent>
-            <CardFooter className="flex flex-col gap-2">
-              <Link
-                href="https://github.com/mitchellbreust/EchoMesh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-medium text-blue-600 hover:underline"
-              >
-                View on GitHub →
-              </Link>
-              <div className="w-full aspect-video bg-muted rounded-md flex items-center justify-center text-muted-foreground text-sm border">
-                Video demo coming soon...
-              </div>
-            </CardFooter>
-          </Card>
+  <CardHeader className="flex-grow flex flex-col">
+    <div className="h-[80px]">
+      <CardTitle>Crop Health Pulse</CardTitle>
+      <CardDescription className="line-clamp-2 mt-3">
+        Satellite-Based Agricultural Monitoring Dashboard for Cairns surrounding areas.
+      </CardDescription>
+    </div>
+  </CardHeader>
+  <CardContent className="flex-grow">
+    <p className="text-sm text-muted-foreground">
+      Developed a crop health dashboard using Sentinel-2 NDVI satellite imagery to analyze vegetation patterns across Queensland regions. Implemented spatial databases and geospatial queries for detailed crop health monitoring.
+    </p>
+    <p className="text-xs text-muted-foreground italic mt-2">
+      🔍 Enables early detection of drought stress and abnormal crop patterns to support proactive agricultural decisions.
+    </p>
+  </CardContent>
+  <CardFooter className="flex flex-col gap-2">
+    <Link
+      href="https://crop-health-dashbored.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-xs font-medium text-blue-600 hover:underline"
+    >
+      Visit Live Demo →
+    </Link>
+    <div className="w-full aspect-video bg-muted rounded-md flex items-center justify-center overflow-hidden border">
+      <img
+        src="/cropWeb.png"
+        alt="Crop Health Pulse dashboard screenshot"
+        className="object-cover w-full h-full"
+      />
+    </div>
+  </CardFooter>
+</Card>
 
           {/* Cairns Ute & Move */}
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
