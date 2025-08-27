@@ -37,7 +37,7 @@ export function ProjectsSection() {
   </CardContent>
   <CardFooter className="flex flex-col gap-2">
     <Link
-      href="https://crop-health-dashbored.vercel.app/"
+      href="https://new-front-end-crop-health-cegv.vercel.app/"
       target="_blank"
       rel="noopener noreferrer"
       className="text-xs font-medium text-blue-600 hover:underline"
