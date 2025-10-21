@@ -71,14 +71,14 @@ export function ProjectsSection() {
             </CardContent>
               <CardFooter>
               <Link 
-                href="https://cairns-move-go.vercel.app/" 
+                href="https://obd-data-dash-jiv6u2n7x-mitchellbreusts-projects.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
               >
                 <Image
                   src="/Screenshot2025-10-22010206.png"
-                  alt="Cairns Ute & Move"
+                  alt="Cairns Obd2"
                   width={640}
                   height={360}
                   priority
