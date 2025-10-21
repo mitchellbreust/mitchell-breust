@@ -54,19 +54,19 @@ export function ProjectsSection() {
   </CardFooter>
 </Card>
 
-          {/* Cairns Ute & Move */}
+          {/* OBD2 DATA DASH */}
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <CardHeader className="flex-grow flex flex-col">
               <div className="h-[80px]">
-                <CardTitle>Cairns Ute & Move</CardTitle>
+                <CardTitle>OBD2 DATA DASHBORED: Telematics insight</CardTitle>
                 <CardDescription className="line-clamp-2 mt-3">
-                  Service site for a local removalist team based in Cairns.
+                  Real-time vehicle telemetry and diagnostics platform.
                 </CardDescription>
               </div>
             </CardHeader>
             <CardContent className="flex-grow">
               <p className="text-sm text-muted-foreground">
-                Built with Next.js, this mobile-friendly site promotes a Cairns-based moving and delivery service. It features a clear service breakdown, transparent pricing, and contact options — focused on trust, efficiency, and local connection.
+                Built with Go, Python, and Next.js, this project connects to a vehicle’s OBD-II port to stream live engine data such as speed, throttle, and air flow. It features a secure web dashboard for visualizing performance metrics, uploading CSV logs, and analyzing trends — designed for mechanics, enthusiasts, and engineers who want deep insight into their vehicle’s health.
               </p>
             </CardContent>
               <CardFooter>
@@ -77,7 +77,7 @@ export function ProjectsSection() {
                 className="group relative w-full overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
               >
                 <Image
-                  src="/cairns-move-go.png"
+                  src="/Screenshot2025-10-22010206.png"
                   alt="Cairns Ute & Move"
                   width={640}
                   height={360}
