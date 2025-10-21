@@ -58,7 +58,7 @@ export function ProjectsSection() {
           <Card className="flex flex-col h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
             <CardHeader className="flex-grow flex flex-col">
               <div className="h-[80px]">
-                <CardTitle>OBD2 DATA DASHBORED: Telematics insight</CardTitle>
+                <CardTitle>Obd2 Data Dashbored</CardTitle>
                 <CardDescription className="line-clamp-2 mt-3">
                   Real-time vehicle telemetry and diagnostics platform.
                 </CardDescription>
