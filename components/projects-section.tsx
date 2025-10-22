@@ -71,7 +71,7 @@ export function ProjectsSection() {
             </CardContent>
               <CardFooter>
               <Link 
-                href="https://obd-data-dash-jiv6u2n7x-mitchellbreusts-projects.vercel.app/" 
+                href="https://obd-data-dash.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-md"
